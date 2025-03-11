@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Edit PDFs online for free. Merge, split, rotate, and annotate PDFs. Upgrade for advanced features like OCR, batch processing, and more.">
+  <title>PDF Editor | Free Online PDF Tools</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Icons (Lucide Icons) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Global Styles */
+    :root {
+      --primary-color: #007BFF;
+      --accent-color: #6F42C1;
+      --background-color: #F9FAFB;
+      --text-color: #333;
+      --white: #FFFFFF;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--text-color);
+      background-color: var(--background-color);
+    }
+
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+
+    button {
+      background-color: var(--primary-color);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--accent-color);
+    }
+
+    /* Header */
+    header {
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: var(--text-color);
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary-color);
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: var(--white);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .feature-card {
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-card i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">PDF Editor</div>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Edit PDFs Online for Free</h1>
+    <p>Merge, split, rotate, and annotate PDFs with ease. Upgrade for advanced features like OCR and batch processing.</p>
+    <button>Upload PDF</button>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <i data-lucide="merge"></i>
+      <h3>Merge PDFs</h3>
+      <p>Combine multiple PDFs into one document.</p>
+    </div>
+    <div class="feature-card">
+      <i data-lucide="split"></i>
+      <h3>Split PDF</h3>
+      <p>Divide a PDF into smaller files.</p>
+    </div>
+    <div class="feature-card">
+      <i data-lucide="rotate"></i>
+      <h3>Rotate Pages</h3>
+      <p>Easily rotate PDF pages.</p>
+    </div>
+    <div class="feature-card">
+      <i data-lucide="edit"></i>
+      <h3>Annotate</h3>
+      <p>Add text, highlights, and comments.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 PDF Editor. All rights reserved.</p>
+  </footer>
+
+  <!-- Lucide Icons Script -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
